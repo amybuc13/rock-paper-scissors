@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let input;
     do {
       input = prompt("How many rounds would you like to play?");
-      if (input === null) input = 0; // user clicked "cancel"
+      if (input === null) input = 0; 
     } while (!/^[1-9][0-9]*$/.test(input));
     maxRounds = parseInt(input);
     round = 1;
@@ -88,6 +88,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 🔥 Ask how many rounds at game start
   askRounds();
 });
